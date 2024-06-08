@@ -1,0 +1,41 @@
+{
+  "name": "frontend-assignment",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "npm run format:prettier && npm run format:stylelint",
+    "format:prettier": "prettier --write --list-different .",
+    "format:stylelint": "npm run lint:stylelint -- --fix",
+    "lint": "npm run lint:eslint && npm run lint:typescript && npm run lint:stylelint",
+    "lint:eslint": "eslint --max-warnings=0 --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "lint:stylelint": "stylelint --ignore-path .gitignore '**/*.css'",
+    "lint:typescript": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "8.45.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.4",
+    "stylelint": "^15.10.2",
+    "stylelint-config-clean-order": "^5.0.1",
+    "stylelint-config-standard": "^34.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7"
+  }
+}

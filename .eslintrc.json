@@ -1,0 +1,30 @@
+{
+  "extends": ["eslint:recommended", "prettier"],
+  "env": {
+    "es2022": true,
+    "browser": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "react/react-in-jsx-scope": "off"
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
+    }
+  ]
+}
