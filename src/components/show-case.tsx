@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
- import { ShowcaseCardHeaderProps, ShowcaseCardImageProps } from './model/showcaseCardModels';
+import { ShowcaseCardHeaderProps, ShowcaseCardImageProps } from './model/showcaseCardModels';
 
 export const ANIMATION_DURATION = 0.5;
 
@@ -25,7 +25,7 @@ export const ShowcaseCardHeader = ({ title, actionTitle, description }: Showcase
  * @param desktopImageUrl - URL of the image for desktop devices.
  * @param alt - Alt text for the image.
  */
-export const ShowcaseCardImage:any = ({ mobileImageUrl, desktopImageUrl, alt }: ShowcaseCardImageProps) => {
+export const ShowcaseCardImage = ({ mobileImageUrl, desktopImageUrl, alt }: ShowcaseCardImageProps) => {
   const [loaded, setLoaded] = useState(false);
 
   const handleLoading = () => setLoaded((prev) => !prev);
@@ -37,5 +37,3 @@ export const ShowcaseCardImage:any = ({ mobileImageUrl, desktopImageUrl, alt }: 
     </picture>
   );
 };
-
-

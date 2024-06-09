@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShowcaseCardProps, ShowcaseCardHeaderProps } from './model/showcaseCardModels';
+import { ShowcaseCardProps, ShowcaseCardHeaderProps, ShowcaseCardImageProps } from './model/showcaseCardModels';
 import NavigationButton from './navigation-button';
 import { ANIMATION_DURATION, ShowcaseCardHeader, ShowcaseCardImage } from './show-case';
 
@@ -30,7 +30,7 @@ export default function ShowCaseCard({
       className={`w-full grid-cols-1 place-items-center overflow-hidden lg:grid-cols-2 ${className} ${isActive ? 'grid' : 'hidden'}`}
     >
       <div className="text-center lg:order-2 lg:text-right">
-        <ShowcaseCardImage title={title} actionTitle={actionTitle} description={description} />
+        <ShowcaseCardHeader title={title || ''} actionTitle={actionTitle || ''} description={description || ''} />
         <NavigationButton url={linkUrl} title={linkTitle} /> 
       </div>
       <motion.div
@@ -39,7 +39,7 @@ export default function ShowCaseCard({
         animate={{ y: 0 }}
         transition={{ duration: ANIMATION_DURATION, delay: ANIMATION_DURATION - 0.2 }}
       >
-        <ShowcaseCardImage alt={alt} desktopImageUrl={desktopImageUrl} mobileImageUrl={mobileImageUrl} />
+        <ShowcaseCardImage alt={alt || ''} desktopImageUrl={desktopImageUrl || ''} mobileImageUrl={mobileImageUrl || ''} />
         {animateAfter && animateAfter(ANIMATION_DURATION)}
       </motion.div>
     </motion.article>
@@ -51,4 +51,3 @@ export default function ShowCaseCard({
 ShowCaseCard.Header = ShowcaseCardHeader;
 ShowCaseCard.Image = ShowcaseCardImage;
 ShowCaseCard.ActionButton = NavigationButton;
-
