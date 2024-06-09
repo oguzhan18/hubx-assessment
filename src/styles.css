@@ -1,3 +1,56 @@
-body {
-  display: block;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply h-full min-h-dvh bg-white font-primary text-primary;
+  }
+}
+
+/* Utility classes */
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+}
+
+/* Component styles */
+@layer components {
+  .animate-feature-svg path {
+    fill: theme('colors.action');
+    transition: fill 0.135s ease-in-out; /* corrected milliseconds unit */
+  }
+
+  .animate-feature-svg circle {
+    transform-origin: center;
+    rotate: 270deg;
+    stroke: theme('colors.action');
+    stroke-dasharray: 173;
+    stroke-dashoffset: 173;
+    stroke-opacity: 1;
+    stroke-width: 1px;
+    animation: dash 0.5s linear; /* corrected milliseconds unit */
+    animation-fill-mode: forwards;
+  }
+}
+
+/* Animation keyframes */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
