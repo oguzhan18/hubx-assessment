@@ -1,7 +1,5 @@
-import { ShowcaseCardProps } from '#components/model/showcaseCardModels';
 import { AnimationTypes } from './AnimationType';
 import { MockDataModel } from './models/mock-data-model';
-
 
 /**
  * Array of feature box data for different animation types.
@@ -12,10 +10,10 @@ export const MockDataList: MockDataModel[] = [
     title: 'Scan with Ease',
     actionTitle: 'Document Scanner',
     description:
-      'Scan any document instantly with your mobile device by just a few steps. Save as PDF,JPG,ZIP,TXT and Word format.',
+      'Scan any document instantly with your mobile device by just a few steps. Save as PDF, JPG, ZIP, TXT, and Word format.',
     linkUrl: '#',
-    desktopImageUrl: '/src/assets/img/doc-scanner/phone-doc-scanner-lg.png',
-    mobileImageUrl: 'src/assets/img/doc-scanner/phone-doc-scanner.png',
+    desktopImageUrl: '/assets/img/doc-scanner/phone-doc-scanner-lg.png',
+    mobileImageUrl: '/assets/img/doc-scanner/phone-doc-scanner.png',
     alt: 'Document Scanner',
   },
   {
@@ -23,10 +21,10 @@ export const MockDataList: MockDataModel[] = [
     title: 'Sign & Stamp',
     actionTitle: 'One Tap Focus',
     description:
-      'Draw, scan or import your signature and stamp with a simple touch. Sign and stamp any document with just a single tap!',
+      'Draw, scan, or import your signature and stamp with a simple touch. Sign and stamp any document with just a single tap!',
     linkUrl: '#',
-    desktopImageUrl: 'src/assets/img/stamp-images/phone-stamp-lg.png',
-    mobileImageUrl: 'src/assets/img/stamp-images/phone-stamp.png',
+    desktopImageUrl: '/assets/img/stamp-images/phone-stamp-lg.png',
+    mobileImageUrl: '/assets/img/stamp-images/phone-stamp.png',
     alt: 'Sign & Stamp',
   },
   {
@@ -36,8 +34,8 @@ export const MockDataList: MockDataModel[] = [
     description:
       'Scan multiple pages or documents in multiple-scanning mode. Batch all scans as a single document.',
     linkUrl: '#',
-    desktopImageUrl: 'src/assets/img/batch-scanning/phone-batch-scanning-lg.png',
-    mobileImageUrl: 'src/assets/img/batch-scanning/phone-batch-scanning.png',
+    desktopImageUrl: '/assets/img/batch-scanning/phone-batch-scanning-lg.png',
+    mobileImageUrl: '/assets/img/batch-scanning/phone-batch-scanning.png',
     alt: 'Batch Scanning',
   },
   {
@@ -45,20 +43,20 @@ export const MockDataList: MockDataModel[] = [
     title: 'Advanced Filters',
     actionTitle: 'Unique Filters',
     description:
-      'Apply advanced filters and enhance quality with various custom made filters. Manually edit brightness and contrast by your own choice on the custom filters.',
+      'Apply advanced filters and enhance quality with various custom-made filters. Manually edit brightness and contrast by your own choice on the custom filters.',
     linkUrl: '#',
-    desktopImageUrl: 'src/assets/img/advanced-image/advanced-phone-lg.png',
-    mobileImageUrl: 'src/assets/img/advanced-image/advanced-phone.png',
+    desktopImageUrl: '/assets/img/advanced-image/advanced-phone-lg.png',
+    mobileImageUrl: '/assets/img/advanced-image/advanced-phone.png',
     alt: 'Advanced Filters',
   },
   {
     key: AnimationTypes.EXPORT_SHARE,
     title: 'Export & Share',
     actionTitle: 'All-Round Conversion',
-    description: 'Export your scans as PDF,JPG,ZIP,TXT and Word.',
+    description: 'Export your scans as PDF, JPG, ZIP, TXT, and Word.',
     linkUrl: '#',
-    desktopImageUrl: 'src/assets/img/export-share/phone-export-share-lg.png',
-    mobileImageUrl: 'src/assets/img/export-share/phone-export-share.png',
+    desktopImageUrl: '/assets/img/export-share/phone-export-share-lg.png',
+    mobileImageUrl: '/assets/img/export-share/phone-export-share.png',
     alt: 'Export & Share',
   },
 ];
