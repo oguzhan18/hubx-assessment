@@ -9,7 +9,7 @@ import { ANIMATION_DURATION, ShowcaseCardHeader, ShowcaseCardImage } from './sho
  * @param props - Props for the showcase card.
  */
 export default function ShowCaseCard({
-  title, actionTitle, description, linkUrl, linkTitle = 'Learn More', desktopImageUrl, mobileImageUrl, alt, className = '', animateAfter, isActive,
+  headerTitle, actionTitle, description, linkUrl, linkTitle = 'Learn More', desktopImageUrl, mobileImageUrl, alt, className = '', animateAfter, isActive,
 }: ShowcaseCardProps) {
   return (
     <motion.article
@@ -20,7 +20,7 @@ export default function ShowCaseCard({
       className={`w-full grid-cols-1 place-items-center overflow-hidden lg:grid-cols-2 ${className} ${isActive ? 'grid' : 'hidden'}`}
     >
       <div className="text-center lg:order-2 lg:text-right">
-        <ShowcaseCardHeader title={title} actionTitle={actionTitle} description={description} />
+        <ShowcaseCardHeader headerTitle={headerTitle} actionTitle={actionTitle} description={description} />
         <NavigationButton url={linkUrl} title={linkTitle} /> 
       </div>
       <motion.div
@@ -35,6 +35,7 @@ export default function ShowCaseCard({
     </motion.article>
   );
 }
+
 
 // Assigning sub components to the main component
 ShowCaseCard.Header = ShowcaseCardHeader;
