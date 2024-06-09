@@ -5,21 +5,21 @@ import { NavigationButtonProps } from "./NavigationButtonProps";
  * Props for the header component of the showcase card.
  */
 export interface ShowcaseCardHeaderProps {
-  title?:string;
-    headerTitle?: any;
-    actionTitle?: any;
-    description?: any;
+  title?: string;
+  headerTitle?: string;
+  actionTitle?: string;
+  description?: string;
 }
-  
+
 /**
  * Props for the image component of the showcase card.
  */
 export interface ShowcaseCardImageProps {
-    mobileImageUrl?: string;
-    desktopImageUrl?: string;
-    alt?: string;
+  mobileImageUrl?: string;
+  desktopImageUrl?: string;
+  alt?: string;
 }
-  
+
 /**
  * Props for the main showcase card component.
  */
