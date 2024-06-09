@@ -20,7 +20,7 @@ export default function useImageAnimations() {
           transition={{ duration: duration, delay: duration + 0.2 }}
         >
           <img
-            src="/src/assets/img/advanced-image/animated-image-left.png"
+            src="/assets/img/advanced-image/animated-image-left.png"
             className="absolute -left-5 bottom-4 w-7 lg:-left-9 lg:w-auto"
             alt="Animated Icon Left"
           />
@@ -31,7 +31,7 @@ export default function useImageAnimations() {
           transition={{ duration: duration, delay: duration + 0.5 }}
         >
           <img
-            src="/src/assets/img/advanced-image/animated-image-right.png"
+            src="/assets/img/advanced-image/animated-image-right.png"
             className="absolute -right-5 bottom-4 w-7 lg:-right-9 lg:w-auto"
             alt="Animated Icon Right"
           />

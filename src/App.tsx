@@ -54,31 +54,31 @@ const App: React.FC = (): JSX.Element => {
       </LayoutWrapper>
       <section id="navigation-tabs" className="no-scrollbar flex snap-x justify-between overflow-x-auto">
         <InteractiveIconTrigger
-          svgPath="src/assets/svg/document-scanner.svg"
+          svgPath="/assets/svg/document-scanner.svg"
           label="Document Scanner"
           isActive={activeFeature === AnimationTypes.DOCUMENT_SCANNER}
           onClick={handleButtonClick(AnimationTypes.DOCUMENT_SCANNER)}
         />
         <InteractiveIconTrigger
-          svgPath="src/assets/svg/sign-stamp.svg"
+          svgPath="/assets/svg/sign-stamp.svg"
           label="Sign & Stamp"
           isActive={activeFeature === AnimationTypes.STAMP}
           onClick={handleButtonClick(AnimationTypes.STAMP)}
         />
         <InteractiveIconTrigger
-          svgPath="src/assets/svg/batch-scanning.svg"
+          svgPath="/assets/svg/batch-scanning.svg"
           label="Batch Scanning"
           isActive={activeFeature === AnimationTypes.BATCH_SCANNING}
           onClick={handleButtonClick(AnimationTypes.BATCH_SCANNING)}
         />
         <InteractiveIconTrigger
-          svgPath="src/assets/svg/advanced-filters.svg"
+          svgPath="/assets/svg/advanced-filters.svg"
           label="Advanced Filters"
           isActive={activeFeature === AnimationTypes.ADVANCED_FILTERS}
           onClick={handleButtonClick(AnimationTypes.ADVANCED_FILTERS)}
         />
         <InteractiveIconTrigger
-          svgPath="src/assets/svg/export-share.svg"
+          svgPath="/assets/svg/export-share.svg"
           label="Export & Share"
           isActive={activeFeature === AnimationTypes.EXPORT_SHARE}
           onClick={handleButtonClick(AnimationTypes.EXPORT_SHARE)}

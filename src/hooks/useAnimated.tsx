@@ -21,7 +21,7 @@ export default function useShareExportAnimations() {
           animate={{ y: '0' }}
           transition={{ duration: duration - 0.1, delay: duration + 0.5 }}
           className="absolute -left-12 bottom-6"
-          src="/src/assets/img/animated-icons/animated-share-arrow-icon.png"
+          src="/assets/img/animated-icons/animated-share-arrow-icon.png"
           alt="Animated Share Arrow Icon"
         />
         {/* Animated PDF */}
@@ -30,7 +30,7 @@ export default function useShareExportAnimations() {
           animate={{ y: '0' }}
           transition={{ duration: duration - 0.2, delay: duration + 0.7 }}
           className="absolute bottom-12 left-6 w-24 lg:w-auto"
-          src="/src/assets/img/animated-icons/animated-pdf-icon.png"
+          src="/assets/img/animated-icons/animated-pdf-icon.png"
           alt="Animated PDF Icon"
         />
         {/* Animated JPG */}
@@ -39,7 +39,7 @@ export default function useShareExportAnimations() {
           animate={{ y: '0' }}
           transition={{ duration: duration - 0.2, delay: duration + 1 }}
           className="absolute bottom-20 left-1/2 w-20 lg:w-auto"
-          src="/src/assets/img/animated-icons/animated-image-icon.png"
+          src="/assets/img/animated-icons/animated-image-icon.png"
           alt="Animated JPG Icon"
         />
         {/* Animated TXT */}
@@ -48,7 +48,7 @@ export default function useShareExportAnimations() {
           animate={{ y: '0' }}
           transition={{ duration: duration - 0.2, delay: duration + 1.3 }}
           className="absolute bottom-12 right-6 w-24 lg:w-auto"
-          src="/src/assets/img/animated-icons/export-txt-icon.png"
+          src="/assets/img/animated-icons/export-txt-icon.png"
           alt="Animated TXT Icon"
         />
       </div>

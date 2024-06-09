@@ -20,7 +20,7 @@ export default function useSignatureStampEffect() {
           initial={{ scale: 0, x: '50%', y: '-50%' }}
           animate={{ scale: 1 }}
           transition={{ duration: duration, delay: duration + 0.2 }}
-          src="src/assets/img/stamp-images/stamp-left.png"
+          src="../assets/img/stamp-images/stamp-left.png"
           className="absolute -left-1/2 top-2/3 w-36 lg:w-auto"
           alt="Stamp image in left"
         />
@@ -28,7 +28,7 @@ export default function useSignatureStampEffect() {
           initial={{ scale: 0, x: '-50%' }}
           animate={{ scale: 1 }}
           transition={{ duration: duration, delay: duration + 0.5 }}
-          src="src/assets/img/stamp-images/stamp-right.png"
+          src="../assets/img/stamp-images/stamp-right.png"
           className="absolute -right-1/2 top-28 w-36 lg:top-36 lg:w-auto"
           alt="Stamp image in right"
         />
