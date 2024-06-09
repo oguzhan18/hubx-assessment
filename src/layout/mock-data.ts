@@ -14,7 +14,7 @@ export const MockDataList: MockDataModel[] = [
     description:
       'Scan any document instantly with your mobile device by just a few steps. Save as PDF,JPG,ZIP,TXT and Word format.',
     linkUrl: '#',
-    desktopImageUrl: 'src/assets/img/doc-scanner/phone-doc-scanner-lg.png',
+    desktopImageUrl: '/src/assets/img/doc-scanner/phone-doc-scanner-lg.png',
     mobileImageUrl: 'src/assets/img/doc-scanner/phone-doc-scanner.png',
     alt: 'Document Scanner',
   },
